@@ -181,6 +181,10 @@ footer {
         display: grid;
         grid-template-rows: 5% 90% 5%;
     }
+    
+    .mid-section {
+        margin-left: 25%;
+    }
 
     p {
         margin: 0;
