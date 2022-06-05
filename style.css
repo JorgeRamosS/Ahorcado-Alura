@@ -1,0 +1,185 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: #F3F5FC;
+    color: #0A3871;
+    height: 100%;
+}
+
+.logo {
+    text-align: left;
+}
+
+/* Index */
+
+.botones {
+    margin-top: 50%;
+    margin-bottom: 105%;
+}
+
+.btni {
+    font-size: 1rem;
+    background: #0A3871;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    width: 89%;
+    height: 5.2rem; 
+    
+}
+
+.btni:hover,
+.btni:focus {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+}
+
+/* Juego */
+
+#agregar {
+    border: none;
+    background: #F3F5FC;
+    color: #0A3871;
+    font-size: 2rem;
+    margin: 7rem auto;
+    resize: none;
+    outline: none;
+    text-align: center;
+}
+
+::placeholder {
+    opacity: 1;
+
+}
+
+#nuevaPalabra {
+    display: none;
+}
+
+#container {
+    display: none;
+}
+
+#ahorcadoImg {
+    margin: 1rem auto;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#wordSpotlight {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A3871;
+    text-transform: uppercase;
+}
+
+#teclado {
+    margin: auto 20px;
+}
+
+.btn {
+    font-size: 1rem;
+    background: #0A3871;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 3rem 1rem;
+    cursor: pointer;
+    width: 40%;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+}
+
+.btnt {
+    font-size: 1rem;
+    background: #0A3871;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.btnt:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.btnt:disabled,
+.btnt[disabled] {
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    
+}
+
+footer {
+    font-size: 0.725rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 375px) {
+    
+    .grid-even-rows {
+        display: grid;
+        grid-template-rows: 5% 90% 5%;
+    }
+
+    .botones {
+        margin-top: 20%;
+        margin-bottom: 25%;
+    }
+
+    .btn {
+        width: 20%;
+    }
+
+    .btni {
+        margin: 1rem 20rem;
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    body {
+        height: 100vh;
+    }
+    .grid-even-rows {
+        display: grid;
+        grid-template-rows: 5% 90% 5%;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .botones {
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .btni {
+        margin: 1rem 40rem;
+        width: 15%;
+    }
+
+    #teclado {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
+
+    <script defer src="script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-even-rows">
+        <header class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">    
+            </a>
+        </header>
+        <div class="mid-section">
+            <div class="botones" id="botones">
+                <button class="btni" onclick="reset()">Iniciar Juego</button>
+                
+                <button class="btni" onclick="botonAgregar()">Agregar Palabra</button>                
+            </div>
+            <div id="nuevaPalabra">
+                <textarea name="text" id="agregar" placeholder="Ingrese una palabra"></textarea>
+                <button class="btni" id="boton" onclick="agregarPalabra()">Guardar y empezar</button>
+                <a href="index.html">
+                    <button class="btni" id="boton2">Cancelar</button>        
+                </a>                
+            </div>
+            <div id="container">
+                <div class="errados">Intentos errados: <span id="fallos">0</span> of <span id="maxFallos"></span></div>
+                <div class="texto-centro">
+                    <img id="ahorcadoImg" src="images/a_base.png" alt="Base">
+                    <p>Acierta la palabra:</p>
+                    <p id="wordSpotlight">Aca va la palabra a acertar!</p>
+                    <div id="teclado"></div>
+                    <button class="btn btn-info" onclick="reset()">Nuevo Juego</button>
+                    <a href="index.html">
+                        <button class="btn btn-info" onclick="reset()">Rendirse</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">JERS - Alura Challenge</footer>
+    </div>
+    
+</body>
+</html>
